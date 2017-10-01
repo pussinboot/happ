@@ -1,97 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\code\vj\happ\happ.v4p" systemname="02_HapAdvancedPlaybackWithAudio" filename="C:\code\vj\happ\02_HapAdvancedPlaybackWithAudio.v4p" scrollx="0" scrolly="0" locked="0">
+   <PATCH nodename="C:\code\vj\happ\happ.v4p" systemname="02_HapAdvancedPlaybackWithAudio" filename="C:\code\vj\happ\02_HapAdvancedPlaybackWithAudio.v4p" scrollx="6060" scrolly="0" locked="0">
    <BOUNDS type="Window" left="0" top="5055" width="14775" height="11865">
    </BOUNDS>
-   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="38">
-   <BOUNDS type="Node" left="20370" top="1125" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="20370" top="1125" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2910" top="0" width="23580" height="5050">
-   </BOUNDS>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="TTY">
-   </PIN>
-   </NODE>
-   <NODE systemname="PerfMeter (DX11.Debug)" filename="%VVVV%\packs\dx11\nodes\modules\PerfMeter (DX11.Debug).v4p" nodename="PerfMeter (DX11.Debug)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="2505" top="9735" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="fps" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Cons (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Layer)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="525" top="10350" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
-   </PIN>
-   <PIN pinname="Input 3" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="525" top="10350">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
-   <BOUNDS type="Node" left="18615" top="1410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Maximum Foreground FPS" visible="1" slicecount="1" values="120">
-   </PIN>
-   <PIN pinname="AsyncThreadPriority" slicecount="1" values="-1">
-   </PIN>
-   <PIN pinname="Time Mode" visible="1" slicecount="1" values="Increment">
-   </PIN>
-   <PIN pinname="Maximum Background FPS" visible="1" slicecount="1" values="45">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="18645" top="870" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="18645" top="870" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Maximum Foreground FPS|">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Foreground FPS">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="30" dstpinname="Input 3" linkstyle="VHV">
-   <LINKPOINT x="2535" y="10260">
-   </LINKPOINT>
-   <LINKPOINT x="990" y="10260">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Camera (Transform Softimage Legacy)" filename="%VVVV%\lib\nodes\modules\_legacy\Editing\Camera (Transform Softimage Legacy).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="1185" top="10350" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="Ortho (Transform)" nodename="Ortho (Transform)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="3165" top="10380" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Transform Out" visible="1">
-   </PIN>
-   </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="HapReader (Demolition Media)" filename="%VVVV%\packs\VVVV.DemolitionMedia.Hap\nodes\plugins\DemolitionMediaVVVV.dll" nodename="HapReader (Demolition Media)" componentmode="Hidden" id="40">
@@ -424,46 +334,6 @@
    <LINKPOINT x="11430" y="6793">
    </LINKPOINT>
    </LINK>
-   <NODE id="29" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow">
-   <BOUNDS type="Node" left="345" top="10815" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="345" top="10815" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="14730" top="590" width="13920" height="8820">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Present Time" visible="1">
-   </PIN>
-   <PIN pinname="Query" visible="1">
-   </PIN>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="VSync" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Enable Depth Buffer" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.46790,0.46790,0.46790,1.00000|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="13" srcpinname="Transform Out" dstnodeid="29" dstpinname="Projection" linkstyle="VHV">
-   <LINKPOINT x="3165" y="10718">
-   </LINKPOINT>
-   <LINKPOINT x="1980" y="10718">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="18" srcpinname="View" dstnodeid="29" dstpinname="View" linkstyle="VHV">
-   <LINKPOINT x="1425" y="10703">
-   </LINKPOINT>
-   <LINKPOINT x="1770" y="10703">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Output" dstnodeid="29" dstpinname="Layers">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="190">
    <BOUNDS type="Node" left="705" top="4140" width="100" height="100">
    </BOUNDS>
@@ -519,7 +389,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11340" top="1740" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.3">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -552,24 +422,6 @@
    <LINKPOINT x="6035" y="8748">
    </LINKPOINT>
    <LINKPOINT x="3760" y="7798">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Wall" filename="%VVVV%\packs\VVVV.DemolitionMedia.Hap\girlpower\subpatches\Wall.v4p" nodename="Wall" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="510" top="9750" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="510" top="9750">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="67" srcpinname="Layer" dstnodeid="30" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="205" srcpinname="Texture" dstnodeid="67" dstpinname="Texture" linkstyle="VHV">
-   <LINKPOINT x="1525" y="8190">
-   </LINKPOINT>
-   <LINKPOINT x="1535" y="8895">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="232" hiddenwhenlocked="0" systemname="IOBox (Value Advanced)">
@@ -639,9 +491,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="238">
-   <BOUNDS type="Box" left="11440" top="3960" width="2685" height="300">
+   <BOUNDS type="Box" left="11545" top="3960" width="2685" height="300">
    </BOUNDS>
-   <BOUNDS type="Node" left="11440" top="3960" width="0" height="0">
+   <BOUNDS type="Node" left="11545" top="3960" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -661,30 +513,18 @@
    </PIN>
    <PIN pinname="X Input Value" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="-1" slicecount="1" values="0" pintype="Input">
    </PIN>
    <PIN pinname="Allow MouseOffset" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="progress">
    </PIN>
+   <PIN pinname="X Output Value" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="-1" pintype="Output">
+   </PIN>
    </NODE>
    <LINK srcnodeid="237" srcpinname="Output" dstnodeid="238" dstpinname="X Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="240">
-   <BOUNDS type="Box" left="19120" top="1070" width="1080" height="270">
-   </BOUNDS>
-   <BOUNDS type="Node" left="19120" top="1070" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Increment">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Raw">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="240" srcpinname="Output Enum" dstnodeid="-6" dstpinname="Time Mode">
    </LINK>
    <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="241">
    <BOUNDS type="Node" left="8805" top="7290" width="570" height="270">
@@ -761,9 +601,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="249">
-   <BOUNDS type="Box" left="12070" top="1740" width="2145" height="675">
+   <BOUNDS type="Box" left="12010" top="1755" width="2145" height="675">
    </BOUNDS>
-   <BOUNDS type="Node" left="12070" top="1740" width="0" height="0">
+   <BOUNDS type="Node" left="12010" top="1755" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -783,13 +623,13 @@
    </PIN>
    <PIN pinname="X Input Value" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" visible="-1" slicecount="1" values="0" pintype="Input">
    </PIN>
    <PIN pinname="Allow MouseOffset" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="seek">
    </PIN>
-   <PIN pinname="Y Output Value" visible="1">
+   <PIN pinname="Y Output Value" visible="-1" pintype="Output">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -873,10 +713,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="262" srcpinname="Output" dstnodeid="263" dstpinname="Period">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="-6" dstpinname="Maximum Background FPS">
-   <LINKPOINT x="18840" y="1380">
-   </LINKPOINT>
    </LINK>
    <NODE id="265" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="14565" top="4980" width="100" height="100">
@@ -1465,7 +1301,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="525" top="1365" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\VJ\__hap\converted\Warning_hap.mov">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
